@@ -13,6 +13,7 @@ import com.heima.model.common.dtos.PageResponseResult;
 import com.heima.model.common.dtos.ResponseResult;
 import com.heima.model.common.enums.AppHttpCodeEnum;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -21,6 +22,9 @@ import java.util.Date;
 @Service
 @Transactional
 public class AdSensitiveServiceImpl extends ServiceImpl<AdSensitiveMapper, AdSensitive> implements AdSensitiveService {
+
+    @Autowired
+    private AdSensitiveMapper adSensitiveMapper;
 
     @Override
     public ResponseResult list(SensitiveDTO dto) {
@@ -83,5 +87,10 @@ public class AdSensitiveServiceImpl extends ServiceImpl<AdSensitiveMapper, AdSen
         //3.删除
         removeById(id);
         return ResponseResult.okResult(AppHttpCodeEnum.SUCCESS);
+    }
+
+    @Override
+    public ResponseResult selectAllSensitives() {
+        return ResponseResult.okResult(adSensitiveMapper.findAllSensitives());
     }
 }

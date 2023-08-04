@@ -1,4 +1,4 @@
-//package com.heima.admin.config;
+//package com.heima.admin.com.heima.aliyun.config;
 //
 //import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 //import org.springframework.context.annotation.Bean;

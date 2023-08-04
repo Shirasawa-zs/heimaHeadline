@@ -1,6 +1,6 @@
 package com.heima.feigns.fallback;
 
-import com.heima.feigns.article.ArticleFeign;
+import com.heima.feigns.ArticleFeign;
 import com.heima.model.article.pojo.ApAuthor;
 import com.heima.model.common.dtos.ResponseResult;
 import com.heima.model.common.enums.AppHttpCodeEnum;

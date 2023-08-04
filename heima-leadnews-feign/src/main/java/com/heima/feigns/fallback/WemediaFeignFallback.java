@@ -1,6 +1,6 @@
 package com.heima.feigns.fallback;
 
-import com.heima.feigns.wemedia.WemediaFeign;
+import com.heima.feigns.WemediaFeign;
 import com.heima.model.common.dtos.ResponseResult;
 import com.heima.model.common.enums.AppHttpCodeEnum;
 import com.heima.model.wemedia.pojo.WmUser;

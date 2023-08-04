@@ -1,4 +1,4 @@
-package com.heima.feigns.article;
+package com.heima.feigns;
 
 import com.heima.feigns.config.HeimaFeignAutoConfiguration;
 import com.heima.feigns.fallback.ArticleFeignFallback;
